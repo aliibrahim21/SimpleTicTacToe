@@ -1,1 +1,1 @@
-print('test')
+from board import Board
