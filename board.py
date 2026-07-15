@@ -68,13 +68,6 @@ class Board:
         return (True, '')
     
     def printNumberedBoard(self) -> None:
-        i = 1
-
-        while i <= 9:
-            if i % 3 != 0:
-                print(f'{i} | ', end='')
-            else:
-                print(f'{i}')
-            i = i + 1
+        print('7 | 8 | 9\n4 | 5 | 6\n1 | 2 | 3')
 
 
