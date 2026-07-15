@@ -49,11 +49,11 @@ class Board:
                 col = position - 7
             
             case position if 4 <= position <= 6:
-                row = 0
+                row = 1
                 col = position - 4
             
             case position if 1 <= position <= 3:
-                row = 0
+                row = 2
                 col = position - 1
             
             case _:
