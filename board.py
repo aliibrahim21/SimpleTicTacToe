@@ -35,6 +35,10 @@ class Board:
             and self.board[1][i] == self.board[2][i]):
                 return self.board[0][i]
         return False
+    
+    def printTheBoard(self):
+        for i in range(len(self.board)):
+            print(f'{self.board[i][0]} | {self.board[i][1]} | {self.board[i][2]}')
 
     def addToBoard(self, position: int) -> tuple[bool, str]:
         row = None
@@ -62,5 +66,15 @@ class Board:
         self.changePlayer()
 
         return (True, '')
+    
+    def printNumberedBoard(self) -> None:
+        i = 1
+
+        while i <= 9:
+            if i % 3 != 0:
+                print(f'{i} | ', end='')
+            else:
+                print(f'{i}')
+            i = i + 1
 
 
